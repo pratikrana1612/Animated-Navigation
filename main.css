@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*
+{
+    font-family: 'Muli', sans-serif;
+    box-sizing:border-box;
+}
+body
+{
+    width:100vw;
+    height:100vh;
+    background-color: #eafbff;
+    background-image: linear-gradient( to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100% );
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    width:350px;
+    height:75px;
+    position:relative;
+    background-color:#fff;
+    padding:1rem;
+    display:flex;
+    justify-content: flex-start;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow:0px 2px 5px 2px rgba(0,0,0,0.2);
+    /* flex-direction: column; */
+}
+div span{
+    width:25px;
+    height:3px;
+    margin:5px 0;
+    background-color: #5290f9;
+}
+nav{
+    width:100%;
+    height:100%;
+    
+}
+nav ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+nav ul li{
+    margin:10px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color:black;
+}
+div span:nth-of-type(1)
+{
+    margin:0;
+    position:absolute;
+    right:20px;
+    transform:rotate(45deg);
+}
+div span:nth-of-type(2)
+{
+    margin:0;
+    position:absolute;
+    right:20px;
+    transform:rotate(145deg);
+}
