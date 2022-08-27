@@ -76,6 +76,7 @@ div button{
     width:30px;
     height:25px;
     cursor:pointer;
+    background-color: transparent;
 }
 div button span{
     display:inline-block;
