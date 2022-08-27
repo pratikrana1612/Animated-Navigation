@@ -17,7 +17,7 @@ body
     justify-content: center;
 }
 div{
-    width:350px;
+    width:75px;
     height:75px;
     position:relative;
     background-color:#fff;
@@ -27,18 +27,25 @@ div{
     /* justify-content: center; */
     align-items: center;
     box-shadow:0px 2px 5px 2px rgba(0,0,0,0.2);
+    transition:0.5s linear;
     /* flex-direction: column; */
 }
-div span{
-    width:25px;
-    height:3px;
-    margin:5px 0;
-    background-color: #5290f9;
+.div_increaseing
+{
+    width:350px;
 }
+
 nav{
-    width:100%;
+    /* width:100%; */
+    opacity:0;
     height:100%;
-    
+    transform: translateX(200px);
+    transition: 0.5s linear,opacity 0.3s 0.3s linear;
+}
+.tranforming{
+    transform: translateX(0px);
+    /* display:block; */
+    opacity:1;
 }
 nav ul{
     width:100%;
@@ -58,17 +65,49 @@ nav ul li a
     text-decoration: none;
     color:black;
 }
+div button{
+    padding:0px;
+    border:none;
+    margin:0;
+    position:absolute; 
+     right:20px;
+}
+div button{
+    width:30px;
+    height:25px;
+    cursor:pointer;
+}
+div button span{
+    display:inline-block;
+    width:25px;
+    height:3px;
+    /* margin:5px 0; */
+    background-color: #5290f9;
+    transition: 0.7s linear;
+}
 div span:nth-of-type(1)
 {
-    margin:0;
+
     position:absolute;
-    right:20px;
-    transform:rotate(45deg);
+    top:5px;
+    left:1px;
 }
 div span:nth-of-type(2)
 {
-    margin:0;
     position:absolute;
-    right:20px;
-    transform:rotate(145deg);
+    left:1px;
+    bottom:5px;
+}
+div .button_chnage
+{
+    bottom:20px;
+}
+div .span-1{
+    /* position:static; */
+    transform: rotate(-765deg) !important;
+}
+div .span-2{
+    /* position:static; */
+    bottom:16px !important;
+    transform: rotate(765deg) !important;
 }
